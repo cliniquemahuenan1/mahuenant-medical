@@ -113,7 +113,7 @@ Réponds EXACTEMENT avec ce format (garde les titres en majuscules et les emojis
 
   const ANTHROPIC_KEY = import.meta.env.VITE_ANTHROPIC_KEY
 
-  const response = await fetch('https://api.anthropic.com/v1/messages', {
+  const response = await fetch('/.netlify/functions/anthropic', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
